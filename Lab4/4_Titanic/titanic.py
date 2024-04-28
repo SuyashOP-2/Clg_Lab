@@ -8,6 +8,7 @@ def map_phase(data):
         result.append((key, value))
     return result
 
+
 def reduce_phase(mapped_data):
     # Reduce phase: aggregate data by key
     reduced = {}
@@ -29,7 +30,6 @@ def calculate_results(reduced_data):
             results[f"Number of survived {key[0]}s"] = value['count']
     return results
 
-# Example Titanic data
 data = [
     {'gender': 'male', 'age': 22, 'survived': 0},
     {'gender': 'female', 'age': 28, 'survived': 0},
@@ -37,7 +37,6 @@ data = [
     {'gender': 'female', 'age': 36, 'survived': 1},
     {'gender': 'male', 'age': 30, 'survived': 1},
     {'gender': 'female', 'age': 24, 'survived': 1},
-    # Add more records as needed
 ]
 
 # Perform MapReduce operations

@@ -21,5 +21,5 @@ knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
 
 # Calculate and print the accuracy of the model
-accuracy = accuracy_score(y_test, y_pred)
+accuracy = accuracy_score(y_test, y_pred)   
 print(f'Accuracy: {accuracy * 100:.2f}%')

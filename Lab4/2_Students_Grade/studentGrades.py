@@ -18,6 +18,3 @@ class MRStudentGrades(MRJob):
 
 if __name__ == '__main__':
     MRStudentGrades.run()
-
-
-# python3.9 studentGrades.py students_grade.txt
